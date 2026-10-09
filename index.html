@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bluewater Shell — Mother of Pearl</title>
+  <meta name="description" content="Bluewater Shell. Mother of pearl gathered by hand from the working boats.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="hero" aria-roledescription="carousel" aria-label="Bluewater Shell">
+    <header class="top">
+      <nav class="nav-left" aria-label="Primary">
+        <a href="#story">Our story</a>
+      </nav>
+      <div class="brand">
+        <h1>Bluewater Shell</h1>
+        <img class="crest" src="images/crest.png" alt="">
+        <p class="tag">Mother of Pearl</p>
+      </div>
+      <div class="nav-right" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="M15 15l5 5"/></svg>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2"/><path d="M5 19c1.4-3.2 3.8-4.8 7-4.8S17.6 15.8 19 19"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V7a3 3 0 0 1 6 0v1"/></svg>
+      </div>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="menu-panel">Menu</button>
+    </header>
+
+    <div class="menu-panel" id="menu-panel" hidden>
+      <a href="#story">Our story</a>
+    </div>
+
+    <div class="slides">
+      <figure class="slide is-active">
+        <img src="images/aerial.jpg" alt="A pearl boat from above, long lines trailing through deep blue water">
+      </figure>
+      <figure class="slide">
+        <img src="images/water.jpg" alt="A diver in the water beside the boat, holding a shell bag">
+      </figure>
+      <figure class="slide">
+        <img src="images/deck.jpg" alt="A diver on deck at dusk, shell bag in hand">
+      </figure>
+      <figure class="slide">
+        <img src="images/sunset.jpg" alt="The pearl boat at sunset, crew silhouetted on deck">
+      </figure>
+    </div>
+
+    <button class="arrow prev" type="button" aria-label="Previous photograph">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5L7 12l7 7"/></svg>
+    </button>
+    <button class="arrow next" type="button" aria-label="Next photograph">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 5l7 7-7 7"/></svg>
+    </button>
+
+    <a class="cta" href="#story">Explore the collection</a>
+    <div class="dots" role="tablist" aria-label="Photographs"></div>
+  </section>
+
+  <section class="story" id="story">
+    <figure>
+      <img src="images/diver.jpg?v=2" alt="A diver climbing the ladder back aboard">
+    </figure>
+    <div class="story-copy">
+      <p class="eyebrow">Our story</p>
+      <h2>From my heart to the sea.</h2>
+      <p>Hello, I’m Matilda, and I am a pearl diver. I go over the side of our working boat, collect the pearl shells in my bag, and climb back up the ladder with the ocean still sparkling on my cheeks. Those shells become mother of pearl, and I am so very proud to make them into jewellery with my own two hands. From above, the day’s work is a set of long lines in the water. To me, every line is a love letter, written just for you.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Bluewater Shell</p>
+    <p>Mother of Pearl</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
